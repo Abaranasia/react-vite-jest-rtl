@@ -1,9 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { asyncFunc } from './helpers/asyncFuncs'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const getDataFromApi = async () => {
+    const response = await asyncFunc();
+    return response
+  };
+
+  useEffect(() => {
+    getDataFromApi()
+  }, [])
 
   return (
     <div className="App">
