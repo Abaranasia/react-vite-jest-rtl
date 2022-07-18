@@ -1,6 +1,6 @@
 import { promiseFunc, asyncFunc } from "../src/helpers/asyncFuncs";
 
-describe('Basic Async tests', () => {
+describe('Basic promise tests', () => {
 
   test('should not fail', (done) => {
     const request = "data";
@@ -21,3 +21,12 @@ describe('Basic Async tests', () => {
       });
   });
 });
+
+describe('Basic async tests', () => {
+
+  test('should not fail', async () => {
+    const data = await asyncFunc();
+    console.log("TEST: ", data)
+    expect(typeof data).toBe("string")
+  });
+})
