@@ -1,5 +1,4 @@
 export const promiseFunc = (request) => {
-
   return new Promise((resolve, reject) => {
     setTimeout(() => {
   if (request) {
@@ -12,11 +11,9 @@ export const promiseFunc = (request) => {
 };
 
 export const asyncFunc = (request) => {
-
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-  if (request) {
-    console.log(resquest)
+      if (request) {
     resolve (`take your ${request} back`)
   }else
     reject ("Request could not be satisfied :(")
