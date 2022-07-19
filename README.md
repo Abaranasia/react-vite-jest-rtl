@@ -26,12 +26,17 @@ yarn add --dev babel-jest @babel/core @babel/preset-env
 ```
 
 ### Configure Babel to target your current version of Node
-Create a **babel.config.cjs** file in the root of your project
+Create a **babel.config.json** file in the root of your project
 Add:
-```js
-  module.exports = {
-    presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
-  };
+```json
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      { "targets": { "node": "current" } }
+    ]
+  ]
+}
 ```
 
 ### Install react Testing Library
