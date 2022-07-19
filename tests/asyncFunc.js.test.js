@@ -1,4 +1,6 @@
+
 import { promiseFunc, asyncFunc } from "../src/helpers/asyncFuncs";
+
 
 describe('Basic promise tests', () => {
 
@@ -27,6 +29,6 @@ describe('Basic async tests', () => {
   test('should not fail', async () => {
     const data = await asyncFunc();
     console.log("TEST: ", data)
-    expect(typeof data).toBe("string")
+    expect(typeof data).toBe("object")
   });
 })
