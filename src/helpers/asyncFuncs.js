@@ -15,7 +15,7 @@ export const asyncFunc = async () => {
   try {
     const resp = await fetch('https://reqres.in/api/users?page=2')
     const { data } = await resp.json();
-    console.log(data)
+    // console.log(data)
     return data
 
   } catch (error) {
