@@ -1,4 +1,5 @@
 ## React 18 project with Vite, Jest and React Testing Library
+Simple React v18 project setup with Vite, Jest and React Testing Library. It contains a few helpers and a simple component with their corresponding tests to ensure everything works fine.
 
 ### Create a react based on vite project
 ``` sh
